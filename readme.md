@@ -244,3 +244,21 @@ class Solution {
 ### 总结
 
 ![img](https://code-thinking-1253855093.file.myqcloud.com/pics/%E6%95%B0%E7%BB%84%E6%80%BB%E7%BB%93.png)
+
+
+
+## 链表
+
+
+
+
+
+438.找到字符串中所有字母...
+
+滑动窗口方法：
+
+先统计父字符串和目标的hash字母数组频率
+
+然后对这个父字符串数组 进行滑动窗口，和目标数组比较
+
+记得用arrays的equals比较方便
