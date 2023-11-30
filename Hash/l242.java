@@ -1,3 +1,5 @@
+package Hash;
+
 /**
  * @author kixuan
  * @version 1.0
