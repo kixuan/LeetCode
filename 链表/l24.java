@@ -1,3 +1,5 @@
+package 链表;
+
 /**
  * @author kixuan
  * @version 1.0
