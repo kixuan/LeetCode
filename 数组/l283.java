@@ -1,6 +1,5 @@
 package 数组;
 
-import org.junit.Test;
 
 /**
  * @author kixuan
@@ -21,7 +20,6 @@ public class l283 {
         }
     }
 
-    @Test
     public void main() {
         l283 l = new l283();
         int[] nums = {0, 0, 1};
