@@ -7,13 +7,16 @@ package 字符串;
 public class l541 {
     public String reverseStr(String s, int k) {
         int size = s.length();
-        for (int i = 0; i < size; i += 2 * k)
+        for (int i = 0; i < size; i += 2 * k) {
             // 剩余字符大于等于 k 个，则反转前 k 个字符。
-            if (i + k < size)
+            if (i + k < size) {
                 s = reverse(s, i, i + k - 1);
-                // 剩余字符少于 k 个，则将剩余字符全部反转。
-            else
+            }
+            // 剩余字符少于 k 个，则将剩余字符全部反转。
+            else {
                 s = reverse(s, i, size - 1);
+            }
+        }
 
         return s;
     }

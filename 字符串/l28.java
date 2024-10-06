@@ -26,8 +26,12 @@ public class l28 {
     //     return -1;
     // }
     public int strStr(String haystack, String needle) {
-        if (needle.isEmpty()) return 0;
-        if (needle.length() > haystack.length()) return -1;
+        if (needle.isEmpty()) {
+            return 0;
+        }
+        if (needle.length() > haystack.length()) {
+            return -1;
+        }
 
         for (int i = 0; i <= haystack.length() - needle.length(); i++) {
             // 如果当前字符与needle的第一个字符不匹配，继续
@@ -36,12 +40,15 @@ public class l28 {
 
             // 检查剩余部分是否匹配
             boolean match = true;
-            for (int j = 0; j < needle.length(); j++)
+            for (int j = 0; j < needle.length(); j++) {
                 if (haystack.charAt(i + j) != needle.charAt(j)) {
                     match = false;
                     break;
                 }
-            if (match) return i;
+            }
+            if (match) {
+                return i;
+            }
         }
         return -1;
     }
